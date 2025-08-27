@@ -250,8 +250,3 @@ with tabs[5]:
     st.dataframe(df_show, use_container_width=True, hide_index=True)
     csv=df.to_csv(index=False).encode('utf-8-sig')
     st.download_button('تنزيل الملف بعد التصفية (CSV)', data=csv, file_name='filtered_moh_dataset.csv', mime='text/csv')
-streamlit==1.37.1
-pandas>=2.0.0
-numpy>=1.23.0
-plotly>=5.22.0
-
